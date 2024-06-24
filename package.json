@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "description": "Examples of using Vitest Browser Mode with different frameworks",
   "keywords": [],
+  "license": "MIT",
   "author": "Vladimir Sheremet",
   "scripts": {
     "test": "pnpm -r --sequential test -- --no-watch --browser.headless"
