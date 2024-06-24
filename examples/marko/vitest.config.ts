@@ -10,6 +10,7 @@ export default defineConfig({
       provider: 'playwright',
     },
   },
+  // TODO: this is to make ecosystem work, remove when fixed
   server: {
     fs: {
       strict: false,
