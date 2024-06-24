@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["esnext"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "jsxImportSource": "solid-js",
+    "types": ["@vitest/browser/providers/playwright"],
+    "strict": true,
+    "declaration": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
