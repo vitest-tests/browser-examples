@@ -1,0 +1,16 @@
+{
+  "name": "@vitest-examples/svelte",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@testing-library/svelte": "^5.1.0",
+    "@vitest/browser": "^2.0.0-beta.11",
+    "playwright": "^1.44.1",
+    "svelte": "^4.2.18",
+    "typescript": "^5.5.2",
+    "vitest": "^2.0.0-beta.11"
+  }
+}
