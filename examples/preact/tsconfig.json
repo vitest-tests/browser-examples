@@ -5,6 +5,7 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "types": ["@vitest/browser/providers/playwright"],
     "strict": true,
     "declaration": true,
