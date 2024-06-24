@@ -10,6 +10,7 @@
     "test": "pnpm -r --sequential test -- --no-watch --browser.headless"
   },
   "devDependencies": {
+    "playwright": "^1.44.1",
     "typescript": "^5.5.2",
     "vitest": "^1.6.0"
   }
