@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "Vladimir Sheremet",
   "scripts": {
-    "test": "pnpm -r --sequential test"
+    "test": "pnpm -r --sequential test -- --no-watch --browser.headless"
   },
   "devDependencies": {
     "typescript": "^5.5.2",
