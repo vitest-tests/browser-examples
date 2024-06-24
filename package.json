@@ -12,11 +12,5 @@
   "devDependencies": {
     "typescript": "^5.5.2",
     "vitest": "^1.6.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "vitest": "link:../vitest/packages/vitest",
-      "@vitest/browser": "link:../vitest/packages/browser"
-    }
   }
 }
