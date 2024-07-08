@@ -7,10 +7,10 @@
   "devDependencies": {
     "@marko/testing-library": "^6.2.0",
     "@marko/vite": "^4.1.12",
-    "@vitest/browser": "^2.0.0-beta.11",
+    "@vitest/browser": "^2.0.0-beta.13",
     "marko": "^5.35.5",
     "playwright": "^1.44.1",
     "typescript": "^5.5.2",
-    "vitest": "^2.0.0-beta.11"
+    "vitest": "^2.0.0-beta.13"
   }
 }

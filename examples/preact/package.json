@@ -5,10 +5,10 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@vitest/browser": "^2.0.0-beta.11",
+    "@vitest/browser": "^2.0.0-beta.13",
     "playwright": "^1.44.1",
     "typescript": "^5.5.2",
-    "vitest": "^2.0.0-beta.11"
+    "vitest": "^2.0.0-beta.13"
   },
   "dependencies": {
     "@preact/preset-vite": "^2.8.3",
