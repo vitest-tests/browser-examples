@@ -1,11 +1,15 @@
 import { expect, test } from 'vitest'
-import { render } from '@testing-library/vue'
+import { render } from 'vitest-browser-vue'
 import HelloWorld from '../src/HelloWorld.vue'
 
-test('renders name', () => {
-  const { getByText } = render(HelloWorld, {
+test('renders name and the counter', async () => {
+  const { getByText, getByRole } = render(HelloWorld, {
     props: { name: 'Vitest' },
   })
-  const element = getByText('Hello Vitest!')
-  expect(element).toBeInTheDocument()
+
+  await expect.element(getByText('Hello Vitest x1!')).toBeInTheDocument()
+
+  await getByRole('button', { name: 'Increment' }).click()
+
+  await expect.element(getByText('Hello Vitest x2!')).toBeInTheDocument()
 })

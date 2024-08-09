@@ -15,8 +15,8 @@
   },
   "pnpm": {
     "overrides": {
-      "vitest": "^2.0.0-beta.13",
-      "@vitest/browser": "^2.0.0-beta.13"
+      "vitest": "^2.1.0-beta.4",
+      "@vitest/browser": "^2.1.0-beta.4"
     }
   }
 }
