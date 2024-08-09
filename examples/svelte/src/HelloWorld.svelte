@@ -1,5 +1,12 @@
 <script lang="ts">
-  export let name: string
+  const { name }: { name: string } = $props()
+
+  let count = $state(1)
+
+  function increment() {
+    count++
+  }
 </script>
 
-<h1>Hello {name}!</h1>
+<h1>Hello {name} x{count}!</h1>
+<button onclick={increment}>Increment</button>
