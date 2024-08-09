@@ -1,9 +1,12 @@
 import { expect, test } from 'vitest'
-import { render } from '@testing-library/react'
+import { render } from 'vitest-browser-react'
 import HelloWorld from '../src/HelloWorld'
 
-test('renders name', () => {
-  const { getByText } = render(<HelloWorld name="Vitest" />)
-  const element = getByText('Hello Vitest!')
-  expect(element).toBeInTheDocument()
+test('renders name', async () => {
+  const { getByText, getByRole } = render(<HelloWorld name="Vitest" />)
+
+  await expect.element(getByText('Hello Vitest x1!')).toBeInTheDocument()
+  await getByRole('button', { name: 'Increment '}).click()
+
+  await expect.element(getByText('Hello Vitest x2!')).toBeInTheDocument()
 })

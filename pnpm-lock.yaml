@@ -70,9 +70,6 @@ importers:
 
   examples/react:
     devDependencies:
-      '@testing-library/react':
-        specifier: ^16.0.0
-        version: 16.0.0(@testing-library/dom@10.4.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/react':
         specifier: ^18.3.3
         version: 18.3.3
@@ -97,6 +94,9 @@ importers:
       vitest:
         specifier: ^2.1.0-beta.4
         version: 2.1.0-beta.4(@types/node@20.14.8)(@vitest/browser@2.1.0-beta.4)(jsdom@23.2.0)
+      vitest-browser-react:
+        specifier: ^0.0.1
+        version: 0.0.1(@types/react@18.3.3)(@vitest/browser@2.1.0-beta.4(playwright@1.44.1)(typescript@5.5.2)(vitest@2.1.0-beta.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vitest@2.1.0-beta.4(@types/node@20.14.8)(@vitest/browser@2.1.0-beta.4)(jsdom@23.2.0))
 
   examples/solid:
     devDependencies:
@@ -765,21 +765,6 @@ packages:
     engines: {node: '>= 12'}
     peerDependencies:
       preact: '>=10 || ^10.0.0-alpha.0 || ^10.0.0-beta.0'
-
-  '@testing-library/react@16.0.0':
-    resolution: {integrity: sha512-guuxUKRWQ+FgNX0h0NS0FIq3Q3uLtWVpBzcLOggmfMoUpgBnzBzvLLd4fbm6yS8ydJd94cIfY4yP9qUQjM2KwQ==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@testing-library/dom': ^10.0.0
-      '@types/react': ^18.0.0
-      '@types/react-dom': ^18.0.0
-      react: ^18.0.0
-      react-dom: ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
 
   '@testing-library/user-event@14.5.2':
     resolution: {integrity: sha512-YAh82Wh4TIrxYLmfGcixwD18oIjyC1pFQC2Y01F2lzV2HTMiYrI0nze0FD0ocB//CKS/7jIUgae+adPqxK5yCQ==}
@@ -2111,6 +2096,22 @@ packages:
       vite:
         optional: true
 
+  vitest-browser-react@0.0.1:
+    resolution: {integrity: sha512-075hxhouuuMeCqHRyX4POzZWEDD3aPxFxDcwENN+T2ZlJ4lh5vUlgbkV4C4A0KZWinHb/Wsj3pYEJlDgIO23CQ==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      '@types/react': '>18.0.0'
+      '@types/react-dom': '>18.0.0'
+      '@vitest/browser': ^2.1.0-beta.4
+      react: '>18.0.0'
+      react-dom: '>18.0.0'
+      vitest: ^2.1.0-beta.4
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
   vitest-browser-svelte@0.0.1:
     resolution: {integrity: sha512-p6GaV6ossE27tg+/dRCE1+ZmWEksLlMWDmF0JgEpF9adyAPetWgqaAE7Po76tL/L1aaAgtUC4bG36K2L212i3g==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -2931,15 +2932,6 @@ snapshots:
     dependencies:
       '@testing-library/dom': 8.20.1
       preact: 10.22.0
-
-  '@testing-library/react@16.0.0(@testing-library/dom@10.4.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@babel/runtime': 7.24.7
-      '@testing-library/dom': 10.4.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    optionalDependencies:
-      '@types/react': 18.3.3
 
   '@testing-library/user-event@14.5.2(@testing-library/dom@10.4.0)':
     dependencies:
@@ -4316,6 +4308,15 @@ snapshots:
   vitefu@0.2.5(vite@5.3.1(@types/node@20.14.8)):
     optionalDependencies:
       vite: 5.3.1(@types/node@20.14.8)
+
+  vitest-browser-react@0.0.1(@types/react@18.3.3)(@vitest/browser@2.1.0-beta.4(playwright@1.44.1)(typescript@5.5.2)(vitest@2.1.0-beta.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vitest@2.1.0-beta.4(@types/node@20.14.8)(@vitest/browser@2.1.0-beta.4)(jsdom@23.2.0)):
+    dependencies:
+      '@vitest/browser': 2.1.0-beta.4(playwright@1.44.1)(typescript@5.5.2)(vitest@2.1.0-beta.4)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      vitest: 2.1.0-beta.4(@types/node@20.14.8)(@vitest/browser@2.1.0-beta.4)(jsdom@23.2.0)
+    optionalDependencies:
+      '@types/react': 18.3.3
 
   vitest-browser-svelte@0.0.1(@vitest/browser@2.1.0-beta.4(playwright@1.44.1)(typescript@5.5.2)(vitest@2.1.0-beta.4))(svelte@5.0.0-next.210)(vitest@2.1.0-beta.4(@types/node@20.14.8)(@vitest/browser@2.1.0-beta.4)(jsdom@23.2.0)):
     dependencies:
