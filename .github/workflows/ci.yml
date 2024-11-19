@@ -84,16 +84,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-playwright-
 
-        - uses: browser-actions/setup-chrome@v1
+      - uses: browser-actions/setup-chrome@v1
 
-        - name: Install
-          run: pnpm i
+      - name: Install
+        run: pnpm i
 
-        - name: Install Playwright Dependencies
-          run: pnpm exec playwright install chromium --with-deps
+      - name: Install Playwright Dependencies
+        run: pnpm exec playwright install chromium --with-deps
 
-        - name: Build
-          run: pnpm run build
+      - name: Build
+        run: pnpm run build
 
-        - name: Test
-          run: pnpm run test
+      - name: Test
+        run: pnpm run test
