@@ -2,6 +2,7 @@
   "name": "vitest-browser-examples",
   "type": "module",
   "version": "0.0.0",
+  "packageManager": "pnpm@9.12.3",
   "description": "Examples of using Vitest Browser Mode with different frameworks",
   "keywords": [],
   "license": "MIT",
