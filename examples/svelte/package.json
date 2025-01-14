@@ -5,12 +5,12 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "4.0.0-next.6",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "@vitest/browser": "^2.1.0",
     "playwright": "^1.44.1",
-    "svelte": "5.0.0-next.210",
+    "svelte": "^5.17.5",
     "typescript": "^5.5.2",
     "vitest": "^2.1.0",
-    "vitest-browser-svelte": "^0.0.1"
+    "vitest-browser-svelte": "^0.0.2"
   }
 }
