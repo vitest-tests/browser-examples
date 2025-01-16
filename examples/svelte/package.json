@@ -11,6 +11,6 @@
     "svelte": "^5.17.5",
     "typescript": "^5.5.2",
     "vitest": "^2.1.0",
-    "vitest-browser-svelte": "^0.0.2"
+    "vitest-browser-svelte": "^0.1.0"
   }
 }
