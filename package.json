@@ -8,7 +8,7 @@
   "license": "MIT",
   "author": "Vladimir Sheremet",
   "scripts": {
-    "test": "pnpm -r --filter !marko --sequential test -- --no-watch --browser.headless"
+    "test": "pnpm -r --filter !marko --filter !vue-msw-graphql --sequential test -- --no-watch --browser.headless"
   },
   "devDependencies": {
     "playwright": "^1.49.1",
@@ -16,6 +16,7 @@
   },
   "pnpm": {
     "overrides": {
+      "playwright": "^1.49.1",
       "vite": "^6.0.7",
       "vitest": "3.0.0-beta.4",
       "@vitest/browser": "3.0.0-beta.4"

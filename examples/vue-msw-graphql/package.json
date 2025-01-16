@@ -1,5 +1,5 @@
 {
-  "name": "@vitest-examples/vue",
+  "name": "@vitest-examples/vue-msw-graphql",
   "private": true,
   "type": "module",
   "scripts": {

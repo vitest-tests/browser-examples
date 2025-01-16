@@ -6,8 +6,10 @@ export default defineConfig({
   test: {
     browser: {
       enabled: true,
-      name: 'chromium',
       provider: 'playwright',
+      instances: [
+        { browser: 'chromium' },
+      ],
     },
   },
 })
