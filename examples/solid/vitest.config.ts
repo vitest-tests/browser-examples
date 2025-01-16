@@ -10,8 +10,10 @@ export default defineConfig({
   test: {
     browser: {
       enabled: true,
-      name: 'chromium',
       provider: 'playwright',
+      // TODO: solid plugin breaks if "instances" is used
+      // because it injects a copy of it -- this is a bug in plugin-solid
+      name: 'chromium',
     },
   },
 })
