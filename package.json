@@ -2,7 +2,7 @@
   "name": "vitest-browser-examples",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.6.4",
+  "packageManager": "pnpm@10.6.5",
   "description": "Examples of using Vitest Browser Mode with different frameworks",
   "keywords": [],
   "license": "MIT",
@@ -17,7 +17,7 @@
   "pnpm": {
     "overrides": {
       "playwright": "^1.51.1",
-      "vite": "^6.2.2",
+      "vite": "^6.2.3",
       "vitest": "3.0.9",
       "@vitest/browser": "3.0.9"
     }
