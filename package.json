@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "playwright": "^1.51.1",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "pnpm": {
     "overrides": {
