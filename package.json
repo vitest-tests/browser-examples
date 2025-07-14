@@ -11,13 +11,13 @@
     "test": "pnpm -r --filter !marko --filter !vue-msw-graphql --sequential test -- --no-watch --browser.headless"
   },
   "devDependencies": {
-    "playwright": "^1.53.2",
+    "playwright": "^1.54.1",
     "typescript": "^5.8.3"
   },
   "pnpm": {
     "overrides": {
-      "playwright": "^1.53.2",
-      "vite": "^7.0.3",
+      "playwright": "^1.54.1",
+      "vite": "^7.0.4",
       "vitest": "3.2.4",
       "@vitest/browser": "3.2.4"
     }
