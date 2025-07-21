@@ -17,7 +17,7 @@
   "pnpm": {
     "overrides": {
       "playwright": "^1.54.1",
-      "vite": "^7.0.4",
+      "vite": "^7.0.5",
       "vitest": "3.2.4",
       "@vitest/browser": "3.2.4"
     }
