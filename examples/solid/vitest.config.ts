@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitest/config'
+import { playwright } from '@vitest/browser-playwright'
 import solid from 'vite-plugin-solid'
 
 export default defineConfig({
@@ -10,10 +11,8 @@ export default defineConfig({
   test: {
     browser: {
       enabled: true,
-      provider: 'playwright',
-      // TODO: solid plugin breaks if "instances" is used
-      // because it injects a copy of it -- this is a bug in plugin-solid
-      name: 'chromium',
+      provider: playwright(),
+      instances: [{ browser: 'chromium' }],
     },
   },
 })

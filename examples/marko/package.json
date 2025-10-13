@@ -5,12 +5,12 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@marko/testing-library": "^6.2.0",
+    "@marko/testing-library": "^6.4.1",
     "@marko/vite": "^4.1.12",
-    "@vitest/browser": "^2.1.0",
+    "@vitest/browser-playwright": "^4.0.0-beta.17",
     "marko": "^5.35.5",
-    "playwright": "^1.44.1",
+    "playwright": "^1.56.0",
     "typescript": "^5.5.2",
-    "vitest": "^2.1.0"
+    "vitest": "^4.0.0-beta.17"
   }
 }
