@@ -1,0 +1,17 @@
+{
+  "name": "@vitest-examples/qwik",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "^1.11.0",
+    "@builder.io/qwik-city": "^1.11.0",
+    "@vitest/browser-playwright": "^4.0.16",
+    "playwright": "^1.57.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.0.7",
+    "vitest": "^4.0.16",
+    "vitest-browser-qwik": "^0.1.0"
+  }
+}
