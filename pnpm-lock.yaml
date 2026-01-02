@@ -69,6 +69,9 @@ importers:
       vitest:
         specifier: ^4.0.16
         version: 4.0.16(@types/node@20.14.8)(@vitest/browser-playwright@4.0.16)(jsdom@26.1.0)(msw@2.12.7(@types/node@20.14.8)(typescript@5.9.3))
+      vitest-browser-preact:
+        specifier: ^1.0.0
+        version: 1.0.0(preact@10.28.1)(vitest@4.0.16)
 
   examples/qwik:
     devDependencies:
@@ -3180,6 +3183,13 @@ packages:
     peerDependenciesMeta:
       vite:
         optional: true
+
+  vitest-browser-preact@1.0.0:
+    resolution: {integrity: sha512-b8Z6FhGR1mpcIi8AlUl3l/DZ1YGg1dQDcVZpDEzXL9kVUItonnAN/D3omTAxr8IIWeY4sK61FfCtHnihkQ5w/g==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      preact: ^10.0.0
+      vitest: ^4.0.16
 
   vitest-browser-qwik@0.1.0:
     resolution: {integrity: sha512-Lr0lT9luQEa6ZRbgaH1V012rbl+h7kZcwIcfilXxjoS2x7t6N9wL8pQVlXdDb598pGbZ321OZQoek7Q43SgI4g==}
@@ -6749,6 +6759,11 @@ snapshots:
   vitefu@1.1.1(vite@7.3.0(@types/node@20.14.8)):
     optionalDependencies:
       vite: 7.3.0(@types/node@20.14.8)
+
+  vitest-browser-preact@1.0.0(preact@10.28.1)(vitest@4.0.16):
+    dependencies:
+      preact: 10.28.1
+      vitest: 4.0.16(@types/node@20.14.8)(@vitest/browser-playwright@4.0.16)(jsdom@26.1.0)(msw@2.12.7(@types/node@20.14.8)(typescript@5.9.3))
 
   vitest-browser-qwik@0.1.0(@builder.io/qwik@1.18.0(vite@7.3.0(@types/node@20.14.8)))(vite@7.3.0(@types/node@20.14.8))(vitest@4.0.16):
     dependencies:
