@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { render } from '@testing-library/preact'
+import { render } from 'vitest-browser-preact'
 import HelloWorld from '../src/HelloWorld'
 
 test('renders name', () => {
