@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { render } from 'solid-testing-library'
+import { render } from 'vitest-browser-solid'
 import HelloWorld from '../src/HelloWorld'
 
 test('renders name', () => {
