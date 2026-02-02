@@ -2,7 +2,7 @@
   "name": "vitest-browser-examples",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.28.1",
+  "packageManager": "pnpm@10.28.2",
   "description": "Examples of using Vitest Browser Mode with different frameworks",
   "keywords": [],
   "license": "MIT",
@@ -11,12 +11,12 @@
     "test": "pnpm -r --filter !marko --filter !vue-msw-graphql --sequential test -- --no-watch --browser.headless"
   },
   "devDependencies": {
-    "playwright": "^1.58.0",
+    "playwright": "^1.58.1",
     "typescript": "^5.9.3"
   },
   "pnpm": {
     "overrides": {
-      "playwright": "^1.58.0",
+      "playwright": "^1.58.1",
       "vite": "^7.3.1",
       "vitest": "^4.0.18",
       "@vitest/browser-playwright": "^4.0.18"
