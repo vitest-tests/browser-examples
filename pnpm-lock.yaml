@@ -18,8 +18,8 @@ importers:
         specifier: ^1.58.2
         version: 1.58.2
       typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
+        specifier: ^6.0.2
+        version: 6.0.2
 
   examples/marko:
     devDependencies:
@@ -200,7 +200,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
-        version: 5.2.4(vite@8.0.1(esbuild@0.27.2))(vue@3.5.26(typescript@5.9.3))
+        version: 5.2.4(vite@8.0.1(@types/node@20.14.8)(esbuild@0.27.2))(vue@3.5.26(typescript@5.9.3))
       '@vitest/browser-playwright':
         specifier: ^4.1.0
         version: 4.1.0(msw@2.12.7(@types/node@20.14.8)(typescript@5.9.3))(playwright@1.58.2)(vite@8.0.1(@types/node@20.14.8)(esbuild@0.27.2))(vitest@4.1.0)
@@ -227,10 +227,10 @@ importers:
         version: 3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@vue/apollo-composable':
         specifier: ^4.2.1
-        version: 4.2.2(@apollo/client@3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(graphql@16.12.0)(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
+        version: 4.2.2(@apollo/client@3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(graphql@16.12.0)(typescript@6.0.2)(vue@3.5.26(typescript@6.0.2))
       '@vue/apollo-option':
         specifier: ^4.2.0
-        version: 4.2.2(@apollo/client@3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vue@3.5.26(typescript@5.9.3))
+        version: 4.2.2(@apollo/client@3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vue@3.5.26(typescript@6.0.2))
       graphql:
         specifier: ^16.9.0
         version: 16.12.0
@@ -239,29 +239,29 @@ importers:
         version: 2.12.6(graphql@16.12.0)
       vue:
         specifier: ^3.5.10
-        version: 3.5.26(typescript@5.9.3)
+        version: 3.5.26(typescript@6.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.1.4
-        version: 5.2.4(vite@8.0.1(esbuild@0.27.2))(vue@3.5.26(typescript@5.9.3))
+        version: 5.2.4(vite@8.0.1(esbuild@0.27.2))(vue@3.5.26(typescript@6.0.2))
       '@vitest/browser-playwright':
         specifier: ^4.1.0
-        version: 4.1.0(msw@2.12.7(typescript@5.9.3))(playwright@1.58.2)(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)
+        version: 4.1.0(msw@2.12.7(typescript@6.0.2))(playwright@1.58.2)(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)
       '@vitest/mocker':
         specifier: ^2.1.4
-        version: 2.1.9(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))
+        version: 2.1.9(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))
       msw:
         specifier: ^2.11.5
-        version: 2.12.7(@types/node@20.14.8)(typescript@5.9.3)
+        version: 2.12.7(typescript@6.0.2)
       playwright:
         specifier: ^1.58.2
         version: 1.58.2
       vitest:
         specifier: ^4.1.0
-        version: 4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))
+        version: 4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))
       vitest-browser-vue:
         specifier: ^2.0.0-beta.1
-        version: 2.0.1(vitest@4.1.0)(vue@3.5.26(typescript@5.9.3))
+        version: 2.0.1(vitest@4.1.0)(vue@3.5.26(typescript@6.0.2))
 
 packages:
 
@@ -3243,6 +3243,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@6.0.2:
+    resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
@@ -4702,10 +4707,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-vue@5.2.4(vite@8.0.1(esbuild@0.27.2))(vue@3.5.26(typescript@5.9.3))':
+  '@vitejs/plugin-vue@5.2.4(vite@8.0.1(@types/node@20.14.8)(esbuild@0.27.2))(vue@3.5.26(typescript@5.9.3))':
     dependencies:
       vite: 8.0.1(@types/node@20.14.8)(esbuild@0.27.2)
       vue: 3.5.26(typescript@5.9.3)
+
+  '@vitejs/plugin-vue@5.2.4(vite@8.0.1(esbuild@0.27.2))(vue@3.5.26(typescript@6.0.2))':
+    dependencies:
+      vite: 8.0.1(@types/node@20.14.8)(esbuild@0.27.2)
+      vue: 3.5.26(typescript@6.0.2)
 
   '@vitest/browser-playwright@4.1.0(msw@2.12.7(@types/node@20.14.8)(typescript@5.8.3))(playwright@1.58.2)(vite@8.0.1(@types/node@20.14.8)(esbuild@0.27.2))(vitest@4.1.0)':
     dependencies:
@@ -4733,13 +4743,13 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@vitest/browser-playwright@4.1.0(msw@2.12.7(typescript@5.9.3))(playwright@1.58.2)(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)':
+  '@vitest/browser-playwright@4.1.0(msw@2.12.7(typescript@6.0.2))(playwright@1.58.2)(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)':
     dependencies:
-      '@vitest/browser': 4.1.0(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)
-      '@vitest/mocker': 4.1.0(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))
+      '@vitest/browser': 4.1.0(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)
+      '@vitest/mocker': 4.1.0(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))
       playwright: 1.58.2
       tinyrainbow: 3.0.3
-      vitest: 4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))
+      vitest: 4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))
     transitivePeerDependencies:
       - bufferutil
       - msw
@@ -4780,16 +4790,16 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@vitest/browser@4.1.0(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)':
+  '@vitest/browser@4.1.0(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)':
     dependencies:
       '@blazediff/core': 1.9.1
-      '@vitest/mocker': 4.1.0(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))
+      '@vitest/mocker': 4.1.0(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))
       '@vitest/utils': 4.1.0
       magic-string: 0.30.21
       pngjs: 7.0.0
       sirv: 3.0.2
       tinyrainbow: 3.0.3
-      vitest: 4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))
+      vitest: 4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))
       ws: 8.19.0
     transitivePeerDependencies:
       - bufferutil
@@ -4806,13 +4816,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@2.1.9(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))':
+  '@vitest/mocker@2.1.9(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))':
     dependencies:
       '@vitest/spy': 2.1.9
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      msw: 2.12.7(typescript@5.9.3)
+      msw: 2.12.7(typescript@6.0.2)
       vite: 8.0.1(@types/node@20.14.8)(esbuild@0.27.2)
 
   '@vitest/mocker@4.1.0(msw@2.12.7(@types/node@20.14.8)(typescript@5.8.3))(vite@8.0.1(@types/node@20.14.8)(esbuild@0.27.2))':
@@ -4833,13 +4843,13 @@ snapshots:
       msw: 2.12.7(@types/node@20.14.8)(typescript@5.9.3)
       vite: 8.0.1(@types/node@20.14.8)(esbuild@0.27.2)
 
-  '@vitest/mocker@4.1.0(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))':
+  '@vitest/mocker@4.1.0(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))':
     dependencies:
       '@vitest/spy': 4.1.0
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      msw: 2.12.7(typescript@5.9.3)
+      msw: 2.12.7(typescript@6.0.2)
       vite: 8.0.1(@types/node@20.14.8)(esbuild@0.27.2)
 
   '@vitest/pretty-format@4.1.0':
@@ -4870,22 +4880,22 @@ snapshots:
       convert-source-map: 2.0.0
       tinyrainbow: 3.0.3
 
-  '@vue/apollo-composable@4.2.2(@apollo/client@3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(graphql@16.12.0)(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))':
+  '@vue/apollo-composable@4.2.2(@apollo/client@3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(graphql@16.12.0)(typescript@6.0.2)(vue@3.5.26(typescript@6.0.2))':
     dependencies:
       '@apollo/client': 3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       graphql: 16.12.0
       throttle-debounce: 5.0.2
-      ts-essentials: 9.4.2(typescript@5.9.3)
-      vue: 3.5.26(typescript@5.9.3)
-      vue-demi: 0.14.10(vue@3.5.26(typescript@5.9.3))
+      ts-essentials: 9.4.2(typescript@6.0.2)
+      vue: 3.5.26(typescript@6.0.2)
+      vue-demi: 0.14.10(vue@3.5.26(typescript@6.0.2))
     transitivePeerDependencies:
       - typescript
 
-  '@vue/apollo-option@4.2.2(@apollo/client@3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vue@3.5.26(typescript@5.9.3))':
+  '@vue/apollo-option@4.2.2(@apollo/client@3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(vue@3.5.26(typescript@6.0.2))':
     dependencies:
       '@apollo/client': 3.14.0(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       throttle-debounce: 5.0.2
-      vue: 3.5.26(typescript@5.9.3)
+      vue: 3.5.26(typescript@6.0.2)
 
   '@vue/compiler-core@3.5.26':
     dependencies:
@@ -4938,6 +4948,12 @@ snapshots:
       '@vue/compiler-ssr': 3.5.26
       '@vue/shared': 3.5.26
       vue: 3.5.26(typescript@5.9.3)
+
+  '@vue/server-renderer@3.5.26(vue@3.5.26(typescript@6.0.2))':
+    dependencies:
+      '@vue/compiler-ssr': 3.5.26
+      '@vue/shared': 3.5.26
+      vue: 3.5.26(typescript@6.0.2)
 
   '@vue/shared@3.5.26': {}
 
@@ -6275,8 +6291,9 @@ snapshots:
       typescript: 5.9.3
     transitivePeerDependencies:
       - '@types/node'
+    optional: true
 
-  msw@2.12.7(typescript@5.9.3):
+  msw@2.12.7(typescript@6.0.2):
     dependencies:
       '@inquirer/confirm': 5.1.21(@types/node@20.14.8)
       '@mswjs/interceptors': 0.40.0
@@ -6297,10 +6314,9 @@ snapshots:
       until-async: 3.0.2
       yargs: 17.7.2
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
     transitivePeerDependencies:
       - '@types/node'
-    optional: true
 
   mute-stream@2.0.0: {}
 
@@ -6936,9 +6952,9 @@ snapshots:
 
   trough@2.2.0: {}
 
-  ts-essentials@9.4.2(typescript@5.9.3):
+  ts-essentials@9.4.2(typescript@6.0.2):
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   ts-invariant@0.10.3:
     dependencies:
@@ -6957,6 +6973,8 @@ snapshots:
   typescript@5.8.3: {}
 
   typescript@5.9.3: {}
+
+  typescript@6.0.2: {}
 
   undici-types@5.26.5:
     optional: true
@@ -7099,6 +7117,12 @@ snapshots:
       vitest: 4.1.0(@types/node@20.14.8)(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(@types/node@20.14.8)(typescript@5.9.3))(vite@8.0.1(@types/node@20.14.8)(esbuild@0.27.2))
       vue: 3.5.26(typescript@5.9.3)
 
+  vitest-browser-vue@2.0.1(vitest@4.1.0)(vue@3.5.26(typescript@6.0.2)):
+    dependencies:
+      '@vue/test-utils': 2.4.6
+      vitest: 4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))
+      vue: 3.5.26(typescript@6.0.2)
+
   vitest@4.1.0(@types/node@20.14.8)(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(@types/node@20.14.8)(typescript@5.8.3))(vite@8.0.1(@types/node@20.14.8)(esbuild@0.27.2)):
     dependencies:
       '@vitest/expect': 4.1.0
@@ -7157,10 +7181,10 @@ snapshots:
     transitivePeerDependencies:
       - msw
 
-  vitest@4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2)):
+  vitest@4.1.0(@vitest/browser-playwright@4.1.0)(jsdom@26.1.0)(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2)):
     dependencies:
       '@vitest/expect': 4.1.0
-      '@vitest/mocker': 4.1.0(msw@2.12.7(typescript@5.9.3))(vite@8.0.1(esbuild@0.27.2))
+      '@vitest/mocker': 4.1.0(msw@2.12.7(typescript@6.0.2))(vite@8.0.1(esbuild@0.27.2))
       '@vitest/pretty-format': 4.1.0
       '@vitest/runner': 4.1.0
       '@vitest/snapshot': 4.1.0
@@ -7180,16 +7204,16 @@ snapshots:
       vite: 8.0.1(@types/node@20.14.8)(esbuild@0.27.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@vitest/browser-playwright': 4.1.0(msw@2.12.7(typescript@5.9.3))(playwright@1.58.2)(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)
+      '@vitest/browser-playwright': 4.1.0(msw@2.12.7(typescript@6.0.2))(playwright@1.58.2)(vite@8.0.1(esbuild@0.27.2))(vitest@4.1.0)
       jsdom: 26.1.0
     transitivePeerDependencies:
       - msw
 
   vue-component-type-helpers@2.2.12: {}
 
-  vue-demi@0.14.10(vue@3.5.26(typescript@5.9.3)):
+  vue-demi@0.14.10(vue@3.5.26(typescript@6.0.2)):
     dependencies:
-      vue: 3.5.26(typescript@5.9.3)
+      vue: 3.5.26(typescript@6.0.2)
 
   vue@3.5.26(typescript@5.9.3):
     dependencies:
@@ -7200,6 +7224,16 @@ snapshots:
       '@vue/shared': 3.5.26
     optionalDependencies:
       typescript: 5.9.3
+
+  vue@3.5.26(typescript@6.0.2):
+    dependencies:
+      '@vue/compiler-dom': 3.5.26
+      '@vue/compiler-sfc': 3.5.26
+      '@vue/runtime-dom': 3.5.26
+      '@vue/server-renderer': 3.5.26(vue@3.5.26(typescript@6.0.2))
+      '@vue/shared': 3.5.26
+    optionalDependencies:
+      typescript: 6.0.2
 
   w3c-xmlserializer@5.0.0:
     dependencies:
