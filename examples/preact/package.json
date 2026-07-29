@@ -11,7 +11,7 @@
     "vitest": "^4.0.0-beta.17"
   },
   "dependencies": {
-    "@preact/preset-vite": "^2.8.3",
+    "@preact/preset-vite": "^2.10.6",
     "@testing-library/preact": "^3.2.4",
     "preact": "^10.22.0"
   }
