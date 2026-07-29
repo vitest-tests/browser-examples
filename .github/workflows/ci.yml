@@ -60,8 +60,11 @@ jobs:
           path: ${{ github.workspace }}/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ steps.playwright-version.outputs.version }}
 
+      # --with-deps only does anything on Linux (apt packages). On Windows it
+      # installs the Media Foundation feature (~3min, only needed for media
+      # playback), and on macOS it is a no-op.
       - name: Install Playwright Dependencies
-        run: pnpm exec playwright install chromium --with-deps
+        run: pnpm exec playwright install chromium ${{ runner.os == 'Linux' && '--with-deps' || '' }}
 
       - name: Test
         run: pnpm run test
