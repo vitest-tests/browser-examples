@@ -11,7 +11,7 @@
     "test": "pnpm -r --filter !marko --filter !vue-msw-graphql --sequential test -- --no-watch --browser.headless"
   },
   "devDependencies": {
-    "playwright": "^1.62.0",
+    "playwright": "^1.62.1",
     "typescript": "^7.0.2"
   }
 }
