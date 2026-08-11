@@ -1,0 +1,15 @@
+{
+  "name": "@vitest-tests/browser-disk-pressure",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:disk-pressure": "vitest run",
+    "test:disk-pressure:before-test": "node prepare.mjs"
+  },
+  "devDependencies": {
+    "@vitest/browser-playwright": "^4.1.10",
+    "playwright": "^1.62.1",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10"
+  }
+}
