@@ -45,9 +45,9 @@ test('empty ${index}', () => {
   }
 
   const targetFreeBytes = targetFreeGiB * GIBIBYTE;
-  const ballastBytes = Math.floor(availableBytes() - targetFreeBytes);
-  if (ballastBytes > 0) {
-    await execFileAsync("fallocate", ["-l", String(ballastBytes), TMP_FILE_NAME]);
+  const tmpFileBytes = Math.floor(availableBytes() - targetFreeBytes);
+  if (tmpFileBytes > 0) {
+    await execFileAsync("fallocate", ["-l", String(tmpFileBytes), TMP_FILE_NAME]);
   }
 
   console.log(
