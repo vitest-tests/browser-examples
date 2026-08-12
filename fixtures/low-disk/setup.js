@@ -44,8 +44,15 @@ test('empty ${index}', () => {
     );
   }
 
+  const originalAvailableBytes = availableBytes();
   const targetFreeBytes = targetFreeGiB * GIBIBYTE;
-  const tmpFileBytes = Math.floor(availableBytes() - targetFreeBytes);
+  const tmpFileBytes = Math.max(0, Math.floor(originalAvailableBytes - targetFreeBytes));
+  console.log("Preparing low-disk fixture", {
+    testFileCount,
+    originalAvailableBytes,
+    targetFreeBytes,
+    tmpFileBytes,
+  });
   if (tmpFileBytes > 0) {
     await execFileAsync("fallocate", ["-l", String(tmpFileBytes), TMP_FILE_NAME]);
   }
