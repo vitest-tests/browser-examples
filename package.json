@@ -8,7 +8,9 @@
   "license": "MIT",
   "author": "Vladimir Sheremet",
   "scripts": {
-    "test": "pnpm -r --filter !marko --filter !vue-msw-graphql --sequential test -- --no-watch --browser.headless"
+    "test": "pnpm -r --filter !marko --filter !vue-msw-graphql --filter !@vitest-tests/browser-low-disk --sequential test -- --no-watch --browser.headless",
+    "ecosystem-ci:test:low-disk": "pnpm --dir fixtures/low-disk test",
+    "ecosystem-ci:before-test:low-disk": "pnpm --dir fixtures/low-disk setup 2 150"
   },
   "devDependencies": {
     "playwright": "^1.62.1",

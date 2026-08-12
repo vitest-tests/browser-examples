@@ -263,6 +263,21 @@ importers:
         specifier: ^2.0.0-beta.1
         version: 2.0.1(vitest@4.1.10)(vue@3.5.26(typescript@7.0.2))
 
+  fixtures/low-disk:
+    devDependencies:
+      '@vitest/browser-playwright':
+        specifier: ^4.1.10
+        version: 4.1.10(msw@2.12.7(typescript@7.0.2))(playwright@1.62.1)(vite@8.2.1)(vitest@4.1.10)
+      playwright:
+        specifier: ^1.62.1
+        version: 1.62.1
+      vite:
+        specifier: ^8.2.1
+        version: 8.2.1
+      vitest:
+        specifier: ^4.1.10
+        version: 4.1.10(@vitest/browser-playwright@4.1.10)(jsdom@26.1.0)(msw@2.12.7(typescript@7.0.2))(vite@8.2.1)
+
 packages:
 
   '@apollo/client@3.14.0':
