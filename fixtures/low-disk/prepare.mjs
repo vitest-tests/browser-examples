@@ -27,7 +27,13 @@ mkdirSync(testDirectory, { recursive: true })
 for (let index = 0; index < 150; index++) {
   writeFileSync(
     `${testDirectory}/empty-${index}.test.js`,
-    `import { test } from 'vitest'\n\ntest('empty ${index}', () => {\n  document.body.appendChild(document.createElement('div'))\n})\n`,
+    `\
+import { test } from 'vitest'
+
+test('empty ${index}', () => {
+  document.body.appendChild(document.createElement('div'))
+})
+`,
   )
 }
 
