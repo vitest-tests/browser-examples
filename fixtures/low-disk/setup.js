@@ -4,9 +4,10 @@ import { parseArgs, promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 
 const execFileAsync = promisify(execFile);
+const GIBIBYTE = 1024 ** 3;
+const TMP_FILE_NAME = "/tmp/vitest-browser-low-disk.bin";
 
 async function main() {
-  const gibibyte = 1024 ** 3;
   const { positionals } = parseArgs({ allowPositionals: true });
   const targetFreeGiB = Number(positionals[0]);
   const testFileCount = Number(positionals[1] ?? 150);
@@ -25,13 +26,8 @@ async function main() {
   }
 
   const testDirectory = fileURLToPath(new URL("generated-tests", import.meta.url));
-  const ballast = "/tmp/vitest-browser-low-disk.bin";
-  function availableBytes() {
-    const stats = statfsSync("/tmp");
-    return stats.bavail * stats.bsize;
-  }
 
-  rmSync(ballast, { force: true });
+  rmSync(TMP_FILE_NAME, { force: true });
   rmSync(testDirectory, { force: true, recursive: true });
   mkdirSync(testDirectory, { recursive: true });
 
@@ -48,15 +44,20 @@ test('empty ${index}', () => {
     );
   }
 
-  const targetFreeBytes = targetFreeGiB * gibibyte;
+  const targetFreeBytes = targetFreeGiB * GIBIBYTE;
   const ballastBytes = Math.floor(availableBytes() - targetFreeBytes);
   if (ballastBytes > 0) {
-    await execFileAsync("fallocate", ["-l", String(ballastBytes), ballast]);
+    await execFileAsync("fallocate", ["-l", String(ballastBytes), TMP_FILE_NAME]);
   }
 
   console.log(
-    `Prepared ${testFileCount} test files with ${(availableBytes() / gibibyte).toFixed(2)} GiB free in /tmp`,
+    `Prepared ${testFileCount} test files with ${(availableBytes() / GIBIBYTE).toFixed(2)} GiB free in /tmp`,
   );
+}
+
+function availableBytes() {
+  const stats = statfsSync("/tmp");
+  return stats.bavail * stats.bsize;
 }
 
 main().catch((error) => {
