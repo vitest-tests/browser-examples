@@ -9,8 +9,8 @@
   "author": "Vladimir Sheremet",
   "scripts": {
     "test": "pnpm -r --filter !marko --filter !vue-msw-graphql --sequential test -- --no-watch --browser.headless",
-    "test:low-disk": "pnpm --dir fixtures/low-disk test:low-disk",
-    "test:low-disk:before-test": "pnpm --dir fixtures/low-disk test:low-disk:before-test"
+    "ecosystem-ci:test:low-disk": "pnpm --dir fixtures/low-disk test:low-disk",
+    "ecosystem-ci:before-test:low-disk": "pnpm --dir fixtures/low-disk test:low-disk:before-test 2 150"
   },
   "devDependencies": {
     "playwright": "^1.62.1",
