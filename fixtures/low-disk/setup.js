@@ -56,4 +56,7 @@ test('empty ${index}', () => {
   console.log(`Prepared ${testFileCount} test files with ${(availableBytes() / gibibyte).toFixed(2)} GiB free in /tmp`)
 }
 
-await main()
+main().catch((error) => {
+  console.error(error)
+  process.exit(1)
+})
