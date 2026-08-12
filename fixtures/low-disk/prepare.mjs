@@ -6,14 +6,14 @@ const gibibyte = 1024 ** 3
 const targetFreeGiB = Number(process.argv[2])
 
 if (process.platform !== 'linux') {
-  throw new Error('The disk-pressure suite only supports Linux')
+  throw new Error('The low-disk suite only supports Linux')
 }
 if (!Number.isFinite(targetFreeGiB) || targetFreeGiB < 1) {
-  throw new Error('Specify the free disk to retain in GiB, for example: pnpm test:disk-pressure:before-test 2')
+  throw new Error('Specify the free disk to retain in GiB, for example: pnpm test:low-disk:before-test 2')
 }
 
 const testDirectory = fileURLToPath(new URL('generated-tests', import.meta.url))
-const ballast = '/tmp/vitest-browser-disk-pressure.bin'
+const ballast = '/tmp/vitest-browser-low-disk.bin'
 
 function availableBytes() {
   const stats = statfsSync('/tmp')

@@ -1,10 +1,10 @@
 {
-  "name": "@vitest-tests/browser-disk-pressure",
+  "name": "@vitest-tests/browser-low-disk",
   "private": true,
   "type": "module",
   "scripts": {
-    "test:disk-pressure": "vitest run",
-    "test:disk-pressure:before-test": "node prepare.mjs"
+    "test:low-disk": "vitest run",
+    "test:low-disk:before-test": "node prepare.mjs"
   },
   "devDependencies": {
     "@vitest/browser-playwright": "^4.1.10",
