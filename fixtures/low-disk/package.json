@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "setup": "node prepare.mjs"
+    "setup": "node setup.js"
   },
   "devDependencies": {
     "@vitest/browser-playwright": "^4.1.10",
