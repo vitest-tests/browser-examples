@@ -1,14 +1,15 @@
 import { execFile } from "node:child_process";
 import { mkdirSync, rmSync, statfsSync, writeFileSync } from "node:fs";
-import { promisify } from "node:util";
+import { parseArgs, promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 
 const execFileAsync = promisify(execFile);
 
 async function main() {
   const gibibyte = 1024 ** 3;
-  const targetFreeGiB = Number(process.argv[2]);
-  const testFileCount = Number(process.argv[3] ?? 150);
+  const { positionals } = parseArgs({ allowPositionals: true });
+  const targetFreeGiB = Number(positionals[0]);
+  const testFileCount = Number(positionals[1] ?? 150);
 
   if (process.env.GITHUB_ACTIONS !== "true") {
     throw new Error("The low-disk suite only runs on GitHub Actions");
