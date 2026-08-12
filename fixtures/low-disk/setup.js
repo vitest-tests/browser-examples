@@ -1,12 +1,18 @@
-import { execFileSync } from 'node:child_process'
+import { execFile } from 'node:child_process'
 import { mkdirSync, rmSync, statfsSync, writeFileSync } from 'node:fs'
+import { promisify } from 'node:util'
 import { fileURLToPath } from 'node:url'
 
-function main() {
+const execFileAsync = promisify(execFile)
+
+async function main() {
   const gibibyte = 1024 ** 3
   const targetFreeGiB = Number(process.argv[2])
   const testFileCount = Number(process.argv[3] ?? 150)
 
+  if (process.env.GITHUB_ACTIONS !== 'true') {
+    throw new Error('The low-disk suite only runs on GitHub Actions')
+  }
   if (process.platform !== 'linux') {
     throw new Error('The low-disk suite only supports Linux')
   }
@@ -44,10 +50,10 @@ test('empty ${index}', () => {
   const targetFreeBytes = targetFreeGiB * gibibyte
   const ballastBytes = Math.floor(availableBytes() - targetFreeBytes)
   if (ballastBytes > 0) {
-    execFileSync('fallocate', ['-l', String(ballastBytes), ballast])
+    await execFileAsync('fallocate', ['-l', String(ballastBytes), ballast])
   }
 
   console.log(`Prepared ${testFileCount} test files with ${(availableBytes() / gibibyte).toFixed(2)} GiB free in /tmp`)
 }
 
-main()
+await main()
