@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test:low-disk": "vitest run",
-    "test:low-disk:before-test": "node prepare.mjs"
+    "test": "vitest run",
+    "before-test": "node prepare.mjs"
   },
   "devDependencies": {
     "@vitest/browser-playwright": "^4.1.10",

@@ -11,7 +11,7 @@ function main() {
     throw new Error('The low-disk suite only supports Linux')
   }
   if (!Number.isFinite(targetFreeGiB) || targetFreeGiB < 1) {
-    throw new Error('Specify the free disk to retain in GiB, for example: pnpm test:low-disk:before-test 2 150')
+    throw new Error('Specify the free disk to retain in GiB, for example: pnpm before-test 2 150')
   }
   if (!Number.isInteger(testFileCount) || testFileCount < 1) {
     throw new Error('Test file count must be a positive integer')
