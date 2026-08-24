@@ -7,9 +7,9 @@
     "setup": "node setup.js"
   },
   "devDependencies": {
-    "@vitest/browser-playwright": "^4.1.10",
+    "@vitest/browser-playwright": "^4.1.11",
     "playwright": "^1.62.1",
-    "vite": "^8.2.1",
-    "vitest": "^4.1.10"
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
   }
 }
