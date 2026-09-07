@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  playwright: ^1.62.1
+  playwright: ^1.63.0
   vite: ^8.2.2
   vitest: ^4.1.11
   '@vitest/browser-playwright': ^4.1.11
@@ -15,8 +15,8 @@ importers:
   .:
     devDependencies:
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -31,13 +31,13 @@ importers:
         version: 4.1.20(@marko/compiler@5.39.46(supports-color@7.2.0))(vite@8.2.2)
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       marko:
         specifier: ^5.35.5
         version: 5.38.8(supports-color@7.2.0)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       typescript:
         specifier: ^5.5.2
         version: 5.9.3
@@ -59,10 +59,10 @@ importers:
     devDependencies:
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       typescript:
         specifier: ^5.5.2
         version: 5.9.3
@@ -80,10 +80,10 @@ importers:
         version: 1.20.0(rollup@4.62.3)(supports-color@7.2.0)(typescript@5.8.3)
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
@@ -110,10 +110,10 @@ importers:
         version: 6.0.4(vite@8.2.2)
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       react:
         specifier: ^19.1.0
         version: 19.2.3
@@ -137,10 +137,10 @@ importers:
         version: 0.8.10(solid-js@1.9.10)
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       solid-js:
         specifier: ^1.9.9
         version: 1.9.10
@@ -161,10 +161,10 @@ importers:
         version: 7.2.0(svelte@5.56.8)(vite@8.2.2)
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       svelte:
         specifier: ^5.56.8
         version: 5.56.8
@@ -185,10 +185,10 @@ importers:
         version: 10.4.1
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       typescript:
         specifier: ^5.5.2
         version: 5.9.3
@@ -203,10 +203,10 @@ importers:
         version: 5.2.4(vite@8.2.2)(vue@3.5.26(typescript@5.9.3))
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       typescript:
         specifier: ^5.5.2
         version: 5.9.3
@@ -246,7 +246,7 @@ importers:
         version: 5.2.4(vite@8.2.2)(vue@3.5.26(typescript@7.0.2))
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@7.0.2))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@7.0.2))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       '@vitest/mocker':
         specifier: ^2.1.4
         version: 2.1.9(msw@2.12.7(typescript@7.0.2))(vite@8.2.2)
@@ -254,8 +254,8 @@ importers:
         specifier: ^2.11.5
         version: 2.12.7(typescript@7.0.2)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       vitest:
         specifier: ^4.1.11
         version: 4.1.11(@vitest/browser-playwright@4.1.11)(jsdom@26.1.0)(msw@2.12.7(typescript@7.0.2))(vite@8.2.2)
@@ -267,10 +267,10 @@ importers:
     devDependencies:
       '@vitest/browser-playwright':
         specifier: ^4.1.11
-        version: 4.1.11(msw@2.12.7(typescript@7.0.2))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+        version: 4.1.11(msw@2.12.7(typescript@7.0.2))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
+        specifier: ^1.63.0
+        version: 1.63.0
       vite:
         specifier: ^8.2.2
         version: 8.2.2
@@ -1520,7 +1520,7 @@ packages:
   '@vitest/browser-playwright@4.1.11':
     resolution: {integrity: sha512-riLBxPqwnJ0lWs2DN2WeUfYeKLoAjbP2Xx8cLQdSddzMi20sksIa6K2mPz79DyMZKKVKH2ksOC2yJvtNcZg8cg==}
     peerDependencies:
-      playwright: ^1.62.1
+      playwright: ^1.63.0
       vitest: ^4.1.11
 
   '@vitest/browser@4.1.11':
@@ -2094,11 +2094,6 @@ packages:
   foreground-child@3.3.1:
     resolution: {integrity: sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw==}
     engines: {node: '>=14'}
-
-  fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -2770,13 +2765,13 @@ packages:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
 
-  playwright-core@1.62.1:
-    resolution: {integrity: sha512-wPYSwEBJY9GHraISXqyqtx0na0LpO3XEX7jNDhntbex7tzUS7kLnZsOlFruFJB4Hi/rhDMjXGqHewDZ68nYZVw==}
+  playwright-core@1.63.0:
+    resolution: {integrity: sha512-rYCsBF/M5HjUch52bbtVONEFjv6Xu8sm8h72dNlR5bzIE1fvC/bxgspzkjSfU+MweEMmPM8KJebG6nnyxo5mCg==}
     engines: {node: '>=20'}
     hasBin: true
 
-  playwright@1.62.1:
-    resolution: {integrity: sha512-0M+L3LAD8/nm554LOla9Ayx0j0tmFZ0FBcoQ7F1VuVHpM/XpiC8RcDzBQB8W5+hA8L22THxELzeF+2WcUzvcLg==}
+  playwright@1.63.0:
+    resolution: {integrity: sha512-+7ziBLidS4NaNCdt57SUDT+wYmmd5fmiQejUic/kb+YsYSCPyOOE9sebzMjNmQrsnNpDJqd4WHvV/8lfKfUDUg==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -4650,11 +4645,11 @@ snapshots:
       vite: 8.2.2
       vue: 3.5.26(typescript@7.0.2)
 
-  '@vitest/browser-playwright@4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)':
+  '@vitest/browser-playwright@4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)':
     dependencies:
       '@vitest/browser': 4.1.11(msw@2.12.7(typescript@5.8.3))(vite@8.2.2)(vitest@4.1.11)
       '@vitest/mocker': 4.1.11(msw@2.12.7(typescript@5.8.3))(vite@8.2.2)
-      playwright: 1.62.1
+      playwright: 1.63.0
       tinyrainbow: 3.1.0
       vitest: 4.1.11(@vitest/browser-playwright@4.1.11)(jsdom@26.1.0(supports-color@7.2.0))(msw@2.12.7(typescript@5.8.3))(vite@8.2.2)
     transitivePeerDependencies:
@@ -4663,11 +4658,11 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@vitest/browser-playwright@4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)':
+  '@vitest/browser-playwright@4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)':
     dependencies:
       '@vitest/browser': 4.1.11(msw@2.12.7(typescript@5.9.3))(vite@8.2.2)(vitest@4.1.11)
       '@vitest/mocker': 4.1.11(msw@2.12.7(typescript@5.9.3))(vite@8.2.2)
-      playwright: 1.62.1
+      playwright: 1.63.0
       tinyrainbow: 3.1.0
       vitest: 4.1.11(@vitest/browser-playwright@4.1.11)(jsdom@26.1.0(supports-color@7.2.0))(msw@2.12.7(typescript@5.9.3))(vite@8.2.2)
     transitivePeerDependencies:
@@ -4676,11 +4671,11 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@vitest/browser-playwright@4.1.11(msw@2.12.7(typescript@7.0.2))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)':
+  '@vitest/browser-playwright@4.1.11(msw@2.12.7(typescript@7.0.2))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)':
     dependencies:
       '@vitest/browser': 4.1.11(msw@2.12.7(typescript@7.0.2))(vite@8.2.2)(vitest@4.1.11)
       '@vitest/mocker': 4.1.11(msw@2.12.7(typescript@7.0.2))(vite@8.2.2)
-      playwright: 1.62.1
+      playwright: 1.63.0
       tinyrainbow: 3.1.0
       vitest: 4.1.11(@vitest/browser-playwright@4.1.11)(jsdom@26.1.0)(msw@2.12.7(typescript@7.0.2))(vite@8.2.2)
     transitivePeerDependencies:
@@ -5367,9 +5362,6 @@ snapshots:
     dependencies:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
-
-  fsevents@2.3.2:
-    optional: true
 
   fsevents@2.3.3:
     optional: true
@@ -6349,13 +6341,11 @@ snapshots:
 
   picomatch@4.0.5: {}
 
-  playwright-core@1.62.1: {}
+  playwright-core@1.63.0: {}
 
-  playwright@1.62.1:
+  playwright@1.63.0:
     dependencies:
-      playwright-core: 1.62.1
-    optionalDependencies:
-      fsevents: 2.3.2
+      playwright-core: 1.63.0
 
   pngjs@7.0.0: {}
 
@@ -7072,7 +7062,7 @@ snapshots:
       vite: 8.2.2
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       jsdom: 26.1.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - msw
@@ -7100,7 +7090,7 @@ snapshots:
       vite: 8.2.2
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       jsdom: 26.1.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - msw
@@ -7128,7 +7118,7 @@ snapshots:
       vite: 8.2.2
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@5.8.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       jsdom: 26.1.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - msw
@@ -7156,7 +7146,7 @@ snapshots:
       vite: 8.2.2
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@5.9.3))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       jsdom: 26.1.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - msw
@@ -7184,7 +7174,7 @@ snapshots:
       vite: 8.2.2
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@7.0.2))(playwright@1.62.1)(vite@8.2.2)(vitest@4.1.11)
+      '@vitest/browser-playwright': 4.1.11(msw@2.12.7(typescript@7.0.2))(playwright@1.63.0)(vite@8.2.2)(vitest@4.1.11)
       jsdom: 26.1.0(supports-color@7.2.0)
     transitivePeerDependencies:
       - msw
