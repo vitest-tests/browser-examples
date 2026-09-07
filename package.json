@@ -15,5 +15,10 @@
   "devDependencies": {
     "playwright": "^1.62.1",
     "typescript": "^7.0.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "8.5.23"
+    }
   }
 }
