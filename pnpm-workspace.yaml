@@ -4,8 +4,8 @@ packages:
 overrides:
   playwright: ^1.63.0
   vite: ^8.3.1
-  vitest: ^4.1.11
-  '@vitest/browser-playwright': ^4.1.11
+  vitest: ^5.0.3
+  '@vitest/browser-playwright': ^5.0.3
 allowBuilds:
   esbuild: true
   msw: true
